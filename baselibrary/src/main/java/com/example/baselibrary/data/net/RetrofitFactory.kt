@@ -1,6 +1,6 @@
 package com.example.baselibrary.data.net
 
-import com.example.BaseConstants
+import com.example.baselibrary.BaseConstants
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
