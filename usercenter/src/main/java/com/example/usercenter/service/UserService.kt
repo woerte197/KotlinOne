@@ -1,6 +1,6 @@
 package com.example.usercenter.service
 
-import rx.Observable
+import io.reactivex.Observable
 
 
 interface UserService {

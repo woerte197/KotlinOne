@@ -11,7 +11,7 @@ import javax.inject.Singleton
 class ActivityModule(private val activity: Activity) {
 
     @Provides
-    fun providesContext(): Activity {
+    fun providesActivity(): Activity {
         return activity
     }
 }

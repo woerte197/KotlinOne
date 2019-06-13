@@ -3,6 +3,7 @@ package com.example.wangyang.mykotlin
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.toast
 
 class BaseActivity : AppCompatActivity() {
 

@@ -2,6 +2,7 @@ package com.example.baselibrary.injection.module
 
 import android.content.Context
 import com.example.baselibrary.common.BaseApplication
+import com.trello.rxlifecycle2.LifecycleProvider
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -14,4 +15,7 @@ class AppModule(private val context: BaseApplication) {
     fun providesContext(): Context {
         return context
     }
+
+
+
 }

@@ -1,20 +1,20 @@
 package com.example.baselibrary.rx
 
-import android.util.Log
-import rx.Subscriber
-import kotlin.math.log
+import io.reactivex.Observer
+import io.reactivex.disposables.Disposable
 
-open class BaseSubscribe<T> : Subscriber<T>() {
+
+abstract class BaseSubscribe<T> : Observer<T> {
+    override fun onComplete() {
+    }
+
+    override fun onSubscribe(d: Disposable) {
+    }
 
     override fun onNext(t: T) {
     }
 
-    override fun onCompleted() {
-
-    }
-
     override fun onError(e: Throwable) {
-        Log.e("onError",e.message)
     }
 
 }

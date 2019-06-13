@@ -47,13 +47,20 @@ dependencies {
     // Coroutine listeners for Anko Layouts
     api "org.jetbrains.anko:anko-sdk25-coroutines:$anko_version"
     api "org.jetbrains.anko:anko-appcompat-v7-coroutines:$anko_version"
-    api "io.reactivex:rxkotlin:$rx_kotlin_version"
-    api "io.reactivex:rxandroid:$rx_android_version"
+    api "io.reactivex.rxjava2:rxkotlin:$rx_kotlin_version"
+    api "io.reactivex.rxjava2:rxandroid:$rx_android_version"
     api "com.squareup.retrofit2:retrofit:$retrofit_version"
     api "com.squareup.okhttp3:okhttp:$ok_http_version"
     api "com.squareup.okhttp3:logging-interceptor:$ok_http_version"
     api "com.squareup.retrofit2:converter-gson:$retrofit_version"
-    api "com.squareup.retrofit2:adapter-rxjava:$retrofit_version"
+    api "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
     api "com.google.dagger:dagger:$dagger_version"
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
+//    api 'com.trello.rxlifecycle2:rxlifecycle:2.2.2'
+//    api 'com.trello.rxlifecycle2:rxlifecycle-android-lifecycle-kotlin:2.2.2'
+    api 'com.trello.rxlifecycle2:rxlifecycle-kotlin:2.2.2'
+// If you want to bind to Android-specific lifecycles
+//    api 'com.trello.rxlifecycle2:rxlifecycle-android:2.2.2'
+// If you want pre-written Activities and Fragments you can subclass as providers
+    api 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.2'
 }
