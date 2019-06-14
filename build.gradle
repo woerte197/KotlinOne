@@ -10,6 +10,7 @@ buildscript {
     ext.rxlife_version = '3.0.0'
     repositories {
         google()
+        mavenCentral()
         jcenter()
         jcenter()
     }
@@ -27,6 +28,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        mavenCentral()
     }
 }
 
