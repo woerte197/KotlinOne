@@ -6,7 +6,7 @@
     <com.example.baselibrary.widgets.HeaderBar
         android:id="@id/mHeaderBar"
         style="@style/MatchWrap"
-        app:rightText="@string/common_save"
+        app:rightText="保存"
         app:titleText="个人信息" />
 
     <RelativeLayout
@@ -28,7 +28,7 @@
             android:layout_centerVertical="true"
             android:src="@drawable/icon_arrow" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <com.example.baselibrary.widgets.CircleImageView
             android:id="@+id/mUserIconIv"
             android:layout_width="@dimen/common_icon_width"
             android:layout_height="@dimen/common_icon_height"

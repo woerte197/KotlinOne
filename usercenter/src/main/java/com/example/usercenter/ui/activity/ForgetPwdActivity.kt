@@ -9,21 +9,26 @@ import com.example.usercenter.presenter.ForgetPwdPresenter
 import com.example.usercenter.presenter.view.ForgetPwdView
 import kotlinx.android.synthetic.main.activity_forget_pwd.*
 import org.jetbrains.anko.startActivity
+import org.jetbrains.anko.toast
 
 open class ForgetPwdActivity : BaseMvpActivity<ForgetPwdPresenter>(), ForgetPwdView {
 
 
     override fun initView() {
+
         mVerifyCodeBtn.setOnClickListener {
+
             mVerifyCodeBtn.requestSendVerifyNumber()
         }
+
         mNextBtn.enable(mMobileEt) { isRegisterBtnEnable() }
+
         mNextBtn.enable(mVerifyCodeEt) { isRegisterBtnEnable() }
+
         mNextBtn.setOnClickListener {
-            startActivity<ResetPwdActivity>()
+            mPresenter.forget(mMobileEt.text.toString().trim(), mVerifyCodeEt.text.toString().trim())
         }
     }
-
 
     override fun initDaggerInjection() {
 
@@ -45,7 +50,12 @@ open class ForgetPwdActivity : BaseMvpActivity<ForgetPwdPresenter>(), ForgetPwdV
     }
 
     private fun isRegisterBtnEnable(): Boolean {
-        return mMobileEt.text.isNullOrEmpty().not() &&
-                mVerifyCodeEt.text.isNullOrEmpty().not()
+        return mMobileEt.text.isNullOrEmpty().not() && mVerifyCodeEt.text.isNullOrEmpty().not()
+    }
+
+    override fun onForgetResult(msg: String) {
+        toast(msg)
+        startActivity<ResetPwdActivity>()
+        finish()
     }
 }

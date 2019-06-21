@@ -51,4 +51,44 @@
         android:layout_marginRight="@dimen/common_margin"
         android:text="忘记密码？"
         android:textColor="@color/common_blue" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/test1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/click_test" />
+
+        <ImageView
+            android:id="@+id/test2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/click_test" />
+
+        <ImageView
+            android:id="@+id/test3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/click_test" />
+
+        <ImageView
+            android:id="@+id/test4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/click_test" />
+
+        <ImageView
+            android:id="@+id/test5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/light_progress_loading1" />
+    </FrameLayout>
 </LinearLayout>

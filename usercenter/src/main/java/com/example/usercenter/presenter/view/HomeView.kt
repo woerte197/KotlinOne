@@ -2,6 +2,6 @@ package com.example.usercenter.presenter.view
 
 import com.example.baselibrary.presenter.view.BaseView
 
-interface ForgetPwdView : BaseView {
-    fun onForgetResult(msg:String)
+interface HomeView :BaseView{
+
 }

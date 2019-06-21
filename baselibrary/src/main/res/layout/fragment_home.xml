@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch.Vertical">
+
+    <com.youth.banner.Banner
+        android:id="@+id/mBanner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <com.example.baselibrary.widgets.NewsFlipperView
+        android:id="@+id/mNewsFlipperView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</LinearLayout>

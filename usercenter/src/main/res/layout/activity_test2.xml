@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".test.TestActivity">
+
+    <Button
+        android:id="@+id/bt_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click" />
+
+    <TextView
+        android:id="@+id/test_tv"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:text="test" />
+
+    <Button
+        android:id="@+id/bt_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click" />
+
+    <com.example.usercenter.test.LoadingImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <ImageView
+        android:layout_marginTop="@dimen/d40"
+        android:layout_marginLeft="@dimen/d40"
+        android:id="@+id/test_circle"
+        android:layout_width="@dimen/d40"
+        android:layout_height="@dimen/d40"
+        android:src="@drawable/circle_shape" />
+</LinearLayout>

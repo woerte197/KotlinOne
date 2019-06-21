@@ -7,7 +7,10 @@ buildscript {
     ext.ok_http_version = '3.4.1'
     ext.retrofit_version = '2.4.0'
     ext.dagger_version = '2.11'
-    ext.rxlife_version = '3.0.0'
+    ext.rxlife_version = '2.2.2'
+    ext.glide_version = '4.9.0'
+    ext.navigation_version = '2.0.3'
+    ext.banner_version = '1.4.10'
     repositories {
         google()
         mavenCentral()

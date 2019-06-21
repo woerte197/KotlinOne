@@ -3,9 +3,10 @@ package com.example.baselibrary.ui.activity
 import android.os.Bundle
 import com.example.baselibrary.common.AppManager
 import com.trello.rxlifecycle2.components.RxActivity
+import com.trello.rxlifecycle2.components.support.RxAppCompatActivity
 import org.jetbrains.anko.toast
 
-open class BaseActivity : RxActivity() {
+open class BaseActivity : RxAppCompatActivity() {
 
     private var pressTime = 0L
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -4,6 +4,8 @@ import android.app.Dialog
 import android.content.Context
 import android.graphics.drawable.AnimationDrawable
 import android.view.Gravity
+import android.view.animation.Animation
+import android.view.animation.RotateAnimation
 import android.widget.ImageView
 import com.example.baselibrary.R
 import org.jetbrains.anko.find
@@ -24,6 +26,8 @@ class ProgressLoading(context: Context, themeResId: Int) : Dialog(context, theme
             mDialog.window!!.attributes = lp
             val loadingView = mDialog.find<ImageView>(R.id.iv_loading)
             mAnimationDrawable = loadingView.background as AnimationDrawable
+//            var rotateAnimation = RotateAnimation(0f,360f,Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f)
+//            rotateAnimation.repeatCount
             return mDialog
         }
 

@@ -8,7 +8,9 @@ import com.example.usercenter.injection.module.UserModule
 import com.example.usercenter.presenter.ForgetPwdPresenter
 import com.example.usercenter.presenter.view.ForgetPwdView
 import kotlinx.android.synthetic.main.activity_reset_pwd.*
-import org.jetbrains.anko.startActivity
+import org.jetbrains.anko.clearTop
+import org.jetbrains.anko.intentFor
+import org.jetbrains.anko.singleTop
 
 open class ResetPwdActivity : BaseMvpActivity<ForgetPwdPresenter>(), ForgetPwdView {
 
@@ -18,7 +20,7 @@ open class ResetPwdActivity : BaseMvpActivity<ForgetPwdPresenter>(), ForgetPwdVi
         mConfirmBtn.enable(mPwdConfirmEt) { isRegisterBtnEnable() }
         mConfirmBtn.enable(mPwdEt) { isRegisterBtnEnable() }
         mConfirmBtn.setOnClickListener {
-            startActivity<LoginActivity>()
+            startActivity(intentFor<LoginActivity>().singleTop().clearTop())
         }
     }
 
@@ -45,5 +47,10 @@ open class ResetPwdActivity : BaseMvpActivity<ForgetPwdPresenter>(), ForgetPwdVi
     private fun isRegisterBtnEnable(): Boolean {
         return mPwdConfirmEt.text.isNullOrEmpty().not() &&
                 mPwdEt.text.isNullOrEmpty().not()
+    }
+
+
+    override fun onForgetResult(msg: String) {
+
     }
 }
