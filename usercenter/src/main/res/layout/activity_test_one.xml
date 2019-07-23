@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.TestOneActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="@dimen/d40"
+            android:layout_height="@dimen/d40"
+            android:text="添加"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/del"
+            android:layout_width="@dimen/d40"
+            android:layout_height="@dimen/d40"
+            android:text="移除"
+            android:visibility="gone" />
+
+        <com.example.usercenter.test.PathView
+            android:id="@+id/pathView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <com.example.usercenter.test.GetSegmentView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <com.example.usercenter.test.AliPayView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:visibility="gone" />
+
+        <com.example.usercenter.test.RQuadView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <com.example.usercenter.test.ShadowLayerView
+            android:id="@+id/shadowLayerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <com.example.usercenter.test.TopTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <com.example.usercenter.test.BitmapLayerView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <com.example.usercenter.test.BitmapShaderView
+            android:layout_width="300dp"
+            android:layout_height="500dp"
+            android:visibility="gone" />
+
+        <com.example.usercenter.test.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.example.usercenter.test.RadialGradientView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.example.usercenter.test.AndroidXfermodeView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            />
+
+        <com.example.usercenter.test.EraserView
+            android:visibility="gone"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+        <com.example.usercenter.test.TextWave
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+        <com.example.usercenter.test.Bolang
+            android:layout_width="300dp"
+            android:visibility="gone"
+            android:layout_height="300dp" />
+        <com.example.usercenter.test.GuaguakaView
+            android:visibility="gone"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+        <com.example.usercenter.test.SaveLayerUseExample
+            android:visibility="gone"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+        <com.example.usercenter.test.CanvansFlagView
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="150dp"
+            android:layout_height="24dp"
+            android:background="@null"
+            android:hint="点击输入" />
+
+        <ImageView
+            android:id="@+id/animImageView"
+            android:layout_width="150dp"
+            android:layout_height="24dp" />
+    </FrameLayout>
+</LinearLayout>

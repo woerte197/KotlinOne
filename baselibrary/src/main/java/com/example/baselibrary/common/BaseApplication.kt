@@ -13,6 +13,7 @@ class BaseApplication : Application() {
         super.onCreate()
         initAppInjection()
         context = this
+        AppExceptionHandler.getInstance().init(this)
     }
 
     private fun initAppInjection() {

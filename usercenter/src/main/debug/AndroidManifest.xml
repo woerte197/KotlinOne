@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.MainActivity">
+        <activity android:name=".ui.activity.TestOneActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,8 +21,20 @@
         <activity android:name=".ui.activity.ForgetPwdActivity" />
         <activity android:name=".ui.activity.ResetPwdActivity" />
         <activity android:name=".ui.activity.UserInfoActivity" />
+        <activity android:name=".test.TestActivity" />
+        <activity android:name=".ui.activity.MainActivity" />
+
+        <service
+            android:name=".aidl.CustomService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.usercenter.aidl.CustomService" />
+            </intent-filter>
+        </service>
+
         <activity android:name=".ui.activity.LoginActivity" />
-        <activity android:name=".test.TestActivity"></activity>
+        <activity android:name=".ui.activity.MenuActivity"></activity>
     </application>
 
 </manifest>

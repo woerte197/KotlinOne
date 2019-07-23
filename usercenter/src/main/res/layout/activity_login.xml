@@ -52,6 +52,24 @@
         android:text="忘记密码？"
         android:textColor="@color/common_blue" />
 
+    <com.example.usercenter.test.FallingImageView
+        android:id="@+id/fallingImageView"
+        android:layout_width="@dimen/d40"
+        android:layout_height="@dimen/d40"
+        android:src="@drawable/circle_shape" />
+
+    <com.example.usercenter.test.CustomTextView
+        android:id="@+id/customTextView"
+        android:layout_width="@dimen/d40"
+        android:layout_height="@dimen/d40"
+        android:text="放大" />
+
+    <TextView
+        android:id="@+id/animationSet"
+        android:layout_width="@dimen/d40"
+        android:layout_height="@dimen/d40"
+        android:text="动画组合" />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

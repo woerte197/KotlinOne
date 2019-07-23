@@ -21,11 +21,12 @@ class MyEvaluator<T> : TypeEvaluator<T> {
             val startPoint = startValue as Point
             val endPoint = endValue as Point
             val pointX = (startPoint.x + (endPoint.x - startPoint.x) * fraction).toInt()
-            val pointY: Int = if (fraction * 2 < 1) {
-                (startPoint.y + (endPoint.y - startPoint.y) * fraction * 2).toInt()
-            } else {
-                endPoint.y
-            }
+            val pointY: Int =
+                    if (fraction * 2 < 1) {
+                        (startPoint.y + (endPoint.y - startPoint.y) * fraction).toInt()
+                    } else {
+                        endPoint.y
+                    }
             return Point(pointX, pointY) as T
         }
         return null

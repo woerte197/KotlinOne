@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MenuActivity">
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="@dimen/d40"
+        android:layout_height="@dimen/d40"
+        android:text="测试Value" />
+    <com.example.usercenter.test.MyTestView
+        android:layout_marginTop="@dimen/d40"
+        android:text="@string/app_name"
+        android:id="@+id/testView"
+        android:layout_width="@dimen/d40"
+        android:layout_height="@dimen/d40" />
+
+    <ImageView
+        android:id="@+id/mMenuImage"
+        style="@style/menu_style"
+        android:layout_width="@dimen/d40"
+        android:layout_height="@dimen/d40"
+        android:src="@drawable/circle_shape" />
+
+    <ImageView
+        android:id="@+id/menuOne"
+        style="@style/menu_style"
+        android:src="@drawable/circle_shape"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/menuTwo"
+        style="@style/menu_style"
+        android:src="@drawable/circle_shape"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/menuThree"
+        style="@style/menu_style"
+        android:src="@drawable/circle_shape"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/menuFour"
+        style="@style/menu_style"
+        android:src="@drawable/circle_shape"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/menuFive"
+        style="@style/menu_style"
+        android:src="@drawable/circle_shape"
+        android:visibility="gone" />
+</FrameLayout>
